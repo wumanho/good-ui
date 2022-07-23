@@ -1,0 +1,88 @@
+@import '../../style/variable.scss';
+
+// 按钮类型的配置
+$type: (
+        primary: (
+                color: $g-light-text,
+                background-color: $g-primary,
+        ),
+        secondary: (
+                color: $g-text,
+                background-color: $g-block,
+                border-color: $g-line,
+        ),
+        text: (
+                padding: 0,
+                color: $g-brand-active,
+        ),
+);
+
+// 按钮尺寸
+$size: (
+        large: (
+                height:32px,
+                padding:0 24px,
+                font-size:$g-font-size-lg
+        ),
+        medium: (
+                font-size:$g-font-size-md
+        ),
+        small: (
+                height:24px,
+                padding:0 16px,
+                font-size:$g-font-size-sm
+        ),
+);
+
+// 伪类的配置
+$pseudo: (
+        primary: (
+                hover: (
+                        background-color: $g-primary-hover,
+                ),
+                focus: (
+                        background-color: $g-primary-hover,
+                ),
+                active: (
+                        background-color: $g-primary-active,
+                ),
+                disabled: (
+                        color: $g-light-text,
+                        background: $g-primary-disabled,
+                        border: none,
+                )
+        ),
+        secondary: (
+                hover: (
+                        border-color: $g-form-control-line-active,
+                        color: $g-brand-active,
+                ),
+                focus: (
+                        border-color: $g-form-control-line-active,
+                        color: $g-brand-active,
+                ),
+                active: (
+                        border-color: $g-form-control-line-active,
+                        color: $g-brand-active,
+                ),
+                disabled: (
+                        color: $g-disabled-text,
+                        background: $g-disabled-bg,
+                        border: 1px solid $g-disabled-line,
+                )
+        ),
+        text: (
+                hover: (
+                        color: $g-brand-active-focus,
+                ),
+                focus: (
+                        color: $g-brand-active-focus,
+                ),
+                active: (
+                        color: $g-brand-active-focus,
+                ),
+                disabled: (
+                        color: $g-disabled-text,
+                )
+        )
+);

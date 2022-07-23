@@ -1,13 +1,14 @@
 <script setup lang="ts">
-import HelloWord from './components/HelloWorld.vue'
-import Test from './components/Test'
+const handleClick = () => {
+  console.log('clicked')
+}
 </script>
 
 <template>
-  <HelloWord msg="hello tailwind" />
-  <Test />
+  <GButton type="primary" block size="large">是的</GButton>
+  <GButton type="primary" disabled @click="handleClick">是的</GButton>
+  <GButton type="primary" size="small" @click="handleClick">是的</GButton>
 </template>
-
 <style scoped>
 .logo {
   height: 6em;
