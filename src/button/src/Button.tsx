@@ -7,7 +7,7 @@ export default defineComponent({
   setup(props: ButtonProps, { slots }) {
     const { type, size, disabled, block } = toRefs(props)
     return () => {
-      const defaultSlot = slots.default ? slots.default() : ''
+      const defaultSlot = slots.default ? slots.default() : '确定'
       const isBlock = block.value ? 'g-btn-block' : ''
       return (
         <button
