@@ -2,6 +2,6 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import './index.scss'
-import Button from './button'
+import goodUI from '../dist/'
 
-createApp(App).use(Button).mount('#app')
+createApp(App).use(goodUI).mount('#app')

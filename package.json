@@ -13,7 +13,14 @@
     "prepare": "husky install",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs",
+    "build:components": "node script/build.cjs"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/good-ui.js",
+      "require": "./dist/good-ui.cjs"
+    }
   },
   "dependencies": {
     "vue": "^3.2.37"
@@ -30,6 +37,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.2.0",
+    "fs-extra": "^10.1.0",
     "happy-dom": "^6.0.4",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
