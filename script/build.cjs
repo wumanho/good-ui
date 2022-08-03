@@ -30,7 +30,7 @@ const createPackageJson = (name) => {
     "name": "${name ? name : 'good-ui'}",
     "version": "0.0.0",
     "main": "${name ? 'index.umd.js' : 'good-ui.umd.js'}",
-    "module": "${name ? 'index.js' : 'good-ui.js'}",
+    "module": "${name ? 'index.js' : 'good-ui.es.js'}",
     "author": "WUMANHO",
     "github": "",
     "repository": {
