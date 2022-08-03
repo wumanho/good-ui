@@ -1,5 +1,5 @@
 @use 'button-config';
-@import "./button-base";
+@import "button-base";
 
 .g-btn {
   @include button-base();

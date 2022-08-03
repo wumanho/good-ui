@@ -1,4 +1,4 @@
-import ButtonPlugin, { Button } from '../src/button'
+import ButtonPlugin, { Button } from '../src/components/button'
 import type { App } from 'vue'
 
 // 导出组件
