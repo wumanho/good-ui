@@ -12,12 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "commander": "^9.2.0",
     "fs-extra": "^10.1.0",
     "inquirer": "^8.2.2",
     "kolorist": "^1.5.1"
   },
   "dependencies": {
+    "cac": "^6.7.12",
     "esbuild": "^0.14.38"
   }
 }
