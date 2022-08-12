@@ -1,15 +1,11 @@
 import { includesHelper } from '../utils'
 import { green, red } from 'kolorist'
+import { createComponent, createInfo } from './createComponent'
+
 const inquirer = require('inquirer')
 
 export interface Options {
   type: string
-}
-
-interface createType {
-  name: string
-  title: string
-  category: string
 }
 
 const OptionTypes = ['component', 'lib-entry'] as const
@@ -45,9 +41,14 @@ async function create(type: string) {
     case 'lib-entry':
       console.log(green('lib-entry 生成仍在开发中... '))
       break
+    default:
+      throw new Error('不支持的')
   }
 }
 
+/**
+ *  选择类型的弹出方法
+ */
 async function handleOptionPrompt(): Promise<string> {
   const result = await inquirer.prompt([
     {
@@ -61,7 +62,7 @@ async function handleOptionPrompt(): Promise<string> {
   return result.type
 }
 
-async function handleInfoPrompt(): Promise<createType> {
+async function handleInfoPrompt(): Promise<createInfo> {
   const result = await inquirer.prompt([
     {
       name: 'name',
@@ -96,8 +97,4 @@ async function handleInfoPrompt(): Promise<createType> {
     }
   ])
   return result
-}
-
-function createComponent(info: createType) {
-  console.log(info)
 }

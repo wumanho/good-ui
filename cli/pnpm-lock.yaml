@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/fs-extra': ^9.0.13
   cac: ^6.7.12
   esbuild: ^0.14.38
   fs-extra: ^10.1.0
@@ -12,6 +13,7 @@ dependencies:
   esbuild: 0.14.53
 
 devDependencies:
+  '@types/fs-extra': 9.0.13
   fs-extra: 10.1.0
   inquirer: 8.2.4
   kolorist: 1.5.1
@@ -26,6 +28,16 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@types/fs-extra/9.0.13:
+    resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
+    dependencies:
+      '@types/node': 18.7.2
+    dev: true
+
+  /@types/node/18.7.2:
+    resolution: {integrity: sha512-ce7MIiaYWCFv6A83oEultwhBXb22fxwNOQf5DIxWA4WXvDQ7K+L0fbWl/YOfCzlR5B/uFkSnVBhPcOfOECcWvA==}
+    dev: true
 
   /ansi-escapes/4.3.2:
     resolution: {integrity: sha512-gKXj5ALrKWQLsYG9jlTRmR/xKluxHV+Z9QEwNIgCfM1/uwPMCuzVVnh5mwTd+OuBZcwSIMbqssNWRm1lE51QaQ==}
