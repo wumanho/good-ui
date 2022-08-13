@@ -31,8 +31,8 @@ specifiers:
   ts-node: ^10.7.0
   typescript: ^4.5.4
   vite: ^2.8.0
-  vitepress: ^1.0.0-alpha.2
-  vitepress-theme-demoblock: ^1.4.2
+  vitepress: 1.0.0-alpha.2
+  vitepress-theme-demoblock: 1.4.2
   vitest: ^0.6.1
   vue: ^3.2.37
   vue-tsc: ^0.29.8
@@ -71,7 +71,7 @@ devDependencies:
   ts-node: 10.9.1_typescript@4.7.4
   typescript: 4.7.4
   vite: 2.9.14_sass@1.54.0
-  vitepress: 1.0.0-alpha.4_sass@1.54.0
+  vitepress: 1.0.0-alpha.2_sass@1.54.0
   vitepress-theme-demoblock: 1.4.2_sass@1.54.0
   vitest: 0.6.3_d8eed0a26dcdea486740c02151f1fe1f
   vue-tsc: 0.29.8_typescript@4.7.4
@@ -5786,8 +5786,8 @@ packages:
       - supports-color
     dev: true
 
-  /vitepress/1.0.0-alpha.4_sass@1.54.0:
-    resolution: {integrity: sha512-bOAA4KW6vYGlkbcrPLZLTKWTgXVroObU+o9xj9EENyEl6yg26WWvfN7DGA4BftjdM5O8nR93Z5khPQ3W/tFE7Q==}
+  /vitepress/1.0.0-alpha.2_sass@1.54.0:
+    resolution: {integrity: sha512-twSsmx2DI/3XgZZ8KLyRAH8RgK2Zj4kJx/kwhZhimwndYqQDrtcIaAcuV+P3FKukZ+cYtm9yt9qohz631jKx4A==}
     engines: {node: '>=14.6.0'}
     hasBin: true
     dependencies:

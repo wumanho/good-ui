@@ -10,7 +10,7 @@ import type { GoodUIOptions } from '../_utils/global-config'
 export { ${compName} }
 
 export default {
-  install(app: App. options?: GoodUIOptions) {
+  install(app: App, options?: GoodUIOptions) {
     installComponent(app, ${compName}, options)
   }
 } 
